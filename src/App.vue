@@ -6,23 +6,10 @@
 </template>
 
 <script>
-	import Search from "./components/Search.vue"
-	import List from "./components/List.vue"
+	import Search from './components/Search'
+	import List from './components/List'
 	export default {
 		name:'App',
-		components:{
-			Search,List
-		},
-		mounted() {
-			/**
-			 * 解决 css 引入图片在 github pages 无法获取的问题
-			 */
-			const { NODE_ENV } = process.env;
-			document.documentElement.className = NODE_ENV;
-		}
+		components:{Search,List}
 	}
 </script>
-
-<style>
-	
-</style>
